@@ -11,7 +11,7 @@ export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <div className={styles.heading}>
-        <h1>My Blog App</h1>
+        <h1 className={utilStyles.heading2Xl + " " + styles.blue}>My Blog App</h1>
       </div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
@@ -39,7 +39,7 @@ export default function Layout({ children, home }) {
               width={144}
               alt=""
             />
-            <h1 className={utilStyles.heading2Xl + " " + styles.blue}>{name}</h1>
+            <h1 className={utilStyles.heading2Xl + " " + styles.pink}>{name}</h1>
           </>
         ) : (
           <>
