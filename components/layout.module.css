@@ -21,3 +21,23 @@
   .blue {
     color: #42a5f5;
   }
+
+  .heading {
+    background-color: transparent;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    /* position: fixed; */
+    bottom: 0;
+    /* width: 100%; */
+  }

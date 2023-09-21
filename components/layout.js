@@ -10,6 +10,9 @@ export const siteTitle = "Next.js Blog App";
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
+      <div className={styles.heading}>
+        <h1>My Blog App</h1>
+      </div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -36,7 +39,7 @@ export default function Layout({ children, home }) {
               width={144}
               alt=""
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 className={utilStyles.heading2Xl + " " + styles.blue}>{name}</h1>
           </>
         ) : (
           <>
@@ -47,7 +50,7 @@ export default function Layout({ children, home }) {
                 className={utilStyles.borderCircle}
                 height={108}
                 width={108}
-                alt=""  
+                alt=""
               />
             </Link>
             <h2 className={utilStyles.headingLg}>
@@ -64,6 +67,9 @@ export default function Layout({ children, home }) {
           <Link href="/">← Back to home</Link>
         </div>
       )}
+      <footer className={styles.footer}>
+        <p>&copy; 2023 Blog App</p>
+      </footer>
     </div>
   );
 }
